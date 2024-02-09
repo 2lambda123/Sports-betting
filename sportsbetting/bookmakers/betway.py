@@ -17,7 +17,7 @@ def parse_betway(url):
     """
     if url.count("/") < 5:
         return parse_sport_betway(url)
-    parsed = str(requests.get(url).content)
+    parsed = str(requests.get(url, timeout=60).content)
     if "prematch_event_list:" not in parsed or "params:{}}," not in parsed:
         raise sb.UnavailableCompetitionException
     parsed = parsed.split("prematch_event_list:")[-1]
@@ -43,7 +43,7 @@ def parse_sport_betway(url):
     """
     Get Betway odds from a sport URL
     """
-    parsed = str(requests.get(url).content)
+    parsed = str(requests.get(url, timeout=60).content)
     if "top_bets:" not in parsed or "params:{}}," not in parsed:
         raise sb.UnavailableCompetitionException
     parsed = parsed.split("top_bets:")[-1]
