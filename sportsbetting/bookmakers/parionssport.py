@@ -59,7 +59,7 @@ def parse_parionssport_match_basketball(id_match):
     """
     url = ("https://www.enligne.parionssport.fdj.fr/lvs-api/ff/{}?originId=3&lineId=1&showMarketTypeGroups=true&ext=1"
            "&showPromotions=true".format(id_match))
-    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()})
+    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()}, timeout=60)
     parsed = req.json()
     items = parsed["items"]
     odds = []
@@ -95,7 +95,7 @@ def parse_parionssport_api(id_league):
     """
     url = ("https://www.enligne.parionssport.fdj.fr/lvs-api/next/50/{}?originId=3&lineId=1&breakdownEventsIntoDays=true"
            "&eType=G&showPromotions=true".format(id_league))
-    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()})
+    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()}, timeout=60)
     parsed = req.json()
     odds_match = {}
     if "items" not in parsed:
@@ -143,7 +143,7 @@ def parse_sport_parionssport(sport):
         "hockey-sur-glace"  : "ICEH"
     }
     url = "https://www.enligne.parionssport.fdj.fr/lvs-api/leagues?sport={}".format(sports_alias[sport])
-    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()})
+    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()}, timeout=60)
     competitions = req.json()
     list_odds = []
     for competition in competitions:
@@ -183,7 +183,7 @@ def get_sub_markets_players_basketball_parionssport(id_match):
         return {}
     url = ("https://www.enligne.parionssport.fdj.fr/lvs-api/ff/{}?originId=3&lineId=1&showMarketTypeGroups=true&ext=1"
            "&showPromotions=true".format(id_match))
-    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()})
+    req = requests.get(url, headers={'X-LVS-HSToken': get_parionssport_token()}, timeout=60)
     parsed = req.json()
     items = parsed["items"]
     markets_to_keep = {

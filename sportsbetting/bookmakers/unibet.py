@@ -22,7 +22,7 @@ def get_id_league(url):
         return None, None
     public_url = url.split("https://www.unibet.fr")[1]
     request_url = "https://www.unibet.fr/zones/navigation.json?publicUrl="+public_url
-    content = requests.get(request_url).content
+    content = requests.get(request_url, timeout=60).content
     if "Nos services ne sont pas accessibles pour le moment et seront de retour au plus vite." in str(content):
         raise sb.UnavailableSiteException
     parsed = json.loads(content)
@@ -47,7 +47,7 @@ def parse_unibet_api(id_league, sport, boost):
         parameter = "R%25C3%25A9sultat%2520du%2520match"
     url = ("https://www.unibet.fr/zones/sportnode/markets.json?nodeId={}&filter=R%25C3%25A9sultat&marketname={}"
            .format(id_league, parameter))
-    content = requests.get(url).content
+    content = requests.get(url, timeout=60).content
     parsed = json.loads(content)
     markets_by_type = parsed.get("marketsByType", [])
     odds_match = {}
@@ -94,7 +94,7 @@ def get_sub_markets_players_basketball_unibet(id_match):
     if not id_match:
         return {}
     url = 'https://www.unibet.fr/zones/event.json?eventId=' + id_match
-    content = requests.get(url).content
+    content = requests.get(url, timeout=60).content
     parsed = json.loads(content)
     markets_class_list = parsed.get('marketClassList', [])
     markets_to_keep = {

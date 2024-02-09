@@ -48,7 +48,7 @@ def get_betfair_token():
 def get_event_ids(id_league):
     token = get_betfair_token()
     url = "https://www.betfair.com/www/sports/navigation/v2/graph/bynode?_ak={}&alt=json&currencyCode=EUR&locale=en_GB&maxInDistance=10&maxOutDistance=3&maxResults=1&nodeIds=COMP:{}&outs=MENU".format(token, id_league)
-    content = requests.get(url).content
+    content = requests.get(url, timeout=60).content
     if "Error reference number" in str(content):
         raise sb.UnavailableSiteException
     parsed = json.loads(content)
@@ -63,7 +63,7 @@ def get_back_lay_markets(event_ids):
     back_lay_markets = []
     token = get_betfair_token()
     url = "https://ero.betfair.com/www/sports/exchange/readonly/v1/byevent?_ak={}&alt=json&currencyCode=EUR&locale=fr_FR&eventIds={}&rollupLimit=10&rollupModel=STAKE&types=MARKET_DESCRIPTION,EVENT,RUNNER_DESCRIPTION".format(token, ",".join(event_ids[:5]))
-    content = requests.get(url).content
+    content = requests.get(url, timeout=60).content
     parsed = json.loads(content)
     event_type = parsed.get("eventTypes", {})
     if not event_type:
@@ -84,7 +84,7 @@ def get_odds_from_back_lay_market_ids(back_lay_markets):
     token = get_betfair_token()
     odds_match = {}
     url = "https://ero.betfair.com/www/sports/exchange/readonly/v1/bymarket?_ak={}&alt=json&currencyCode=EUR&locale=fr_FR&marketIds={}&rollupLimit=10&rollupModel=STAKE&types=MARKET_DESCRIPTION,EVENT,RUNNER_DESCRIPTION,RUNNER_EXCHANGE_PRICES_BEST".format(token, ",".join(market_ids))
-    content = requests.get(url).content
+    content = requests.get(url, timeout=60).content
     parsed = json.loads(content)
     event_type = parsed.get("eventTypes", {})
     if not event_type:

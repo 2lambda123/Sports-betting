@@ -22,7 +22,7 @@ def parse_pokerstars_api(id_league):
         "includeOutrights=false&channelId=11&locale=fr-fr&siteId=32&foo={}"
         .format(id_league, str(random.random())[2:10])
     )
-    req = requests.get(url)
+    req = requests.get(url, timeout=60)
     if req.status_code == 503:
         raise sb.UnavailableSiteException
     parsed = req.json()
@@ -84,7 +84,7 @@ def parse_sport_pokerstars(sport):
         "includeCoupons=true&channelId=11&locale=fr-fr&siteId=32&foo={}"
         .format(sport.upper(), str(random.random())[2:10])
     )
-    req = requests.get(url)
+    req = requests.get(url, timeout=60)
     if req.status_code == 503:
         raise sb.UnavailableSiteException
     parsed = req.json()

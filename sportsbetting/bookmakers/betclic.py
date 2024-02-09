@@ -23,7 +23,7 @@ def parse_betclic_api(id_league):
     """
     url = ("https://offer.cdn.betclic.fr/api/pub/v2/competitions/{}?application=2&countrycode=fr"
            "&fetchMultipleDefaultMarkets=true&language=fr&sitecode=frfr".format(id_league))
-    req = requests.get(url)
+    req = requests.get(url, timeout=60)
     parsed = req.json()
     odds_match = {}
     if (not parsed) or "unifiedEvents" not in parsed:
@@ -72,7 +72,7 @@ def parse_sport_betclic(id_sport):
     """
     url = ("https://offer.cdn.betclic.fr/api/pub/v2/sports/{}?application=2&countrycode=fr&language=fr&sitecode=frfr"
            .format(id_sport))
-    req = requests.get(url)
+    req = requests.get(url, timeout=60)
     parsed = req.json()
     list_odds = []
     competitions = parsed["competitions"]
@@ -92,7 +92,7 @@ def get_sub_markets_players_basketball_betclic(id_match):
         'https://offer.cdn.betclic.fr/api/pub/v4/events/{}?application=2&'
         'countrycode=fr&language=fr&sitecode=frfr'.format(str(id_match))
     )
-    req = requests.get(url)
+    req = requests.get(url, timeout=60)
     parsed = req.json()
     if not parsed:
         return {}

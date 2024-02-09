@@ -14,7 +14,7 @@ def parse_france_pari(url):
     """
     Retourne les cotes disponibles sur france-pari
     """
-    soup = BeautifulSoup(requests.get(url).content, features="lxml")
+    soup = BeautifulSoup(requests.get(url, timeout=60).content, features="lxml")
     match_odds_hash = {}
     today = datetime.datetime.today()
     today = datetime.datetime(today.year, today.month, today.day)
