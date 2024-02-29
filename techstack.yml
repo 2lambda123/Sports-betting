@@ -1,0 +1,358 @@
+repo_name: 2lambda123/Sports-betting
+report_id: a4079fb7c78d999faafb7c508b752255
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:15:55+00:00'
+requested_by: pretrehr
+provider: github
+branch: master
+detected_tools_count: 21
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/.github/workflows/pythonpackage-macos.yml
+  detection_source: ".github/workflows/pythonpackage-macos.yml"
+  last_updated_by: pretrehr
+  last_updated_on: 2021-02-15 09:51:15.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2019-12-01 10:26:34.000000000 Z
+- name: NumPy
+  description: Fundamental package for scientific computing with Python
+  website_url: http://www.numpy.org/
+  version: 1.18.4
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/2179/default_332f874a2edb2686f578aa6389313efcea1eec41.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2019-12-01 10:26:34.000000000 Z
+- name: SciPy
+  description: Scientific Computing Tools for Python
+  website_url: http://www.scipy.org
+  version: 1.4.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/3303/scipyshiny_small.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2019-12-01 10:26:34.000000000 Z
+- name: Websockets
+  description: A technology that makes it possible to open a two-way interactive communication
+  website_url: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+  version: '8.1'
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4220/LNPwoiWi_400x400.jpg
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-02-27 18:21:44.000000000 Z
+- name: Unidecode
+  description: ASCII transliterations of Unicode text
+  package_url: https://pypi.org/project/Unidecode
+  version: 1.1.1
+  license: GPL-2.0+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20001/default_fcae0ff2da138e12178ddb620f53c8af65eb3f61.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-01-12 12:44:34.000000000 Z
+- name: beautifulsoup4
+  description: Screen-scraping library
+  package_url: https://pypi.org/project/beautifulsoup4
+  version: 4.9.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19838/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-05-20 15:30:20.000000000 Z
+- name: colorama
+  description: Cross-platform colored terminal text
+  package_url: https://pypi.org/project/colorama
+  version: 0.4.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19845/default_accee5d2b8ed75c2245f13504daf75b1cbc8cc9f.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-10-03 21:24:12.000000000 Z
+- name: demjson
+  description: Encoder
+  package_url: https://pypi.org/project/demjson
+  version: 2.2.4
+  license: GPL-3.0-only
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-05-05 23:16:06.000000000 Z
+- name: fake-useragent
+  description: Up to date simple useragent faker with real world database
+  package_url: https://pypi.org/project/fake-useragent
+  version: 0.1.11
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-05-20 22:50:03.000000000 Z
+- name: lxml
+  description: Powerful and Pythonic XML processing library combining libxml2/libxslt
+    with the ElementTree API
+  package_url: https://pypi.org/project/lxml
+  version: 4.5.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19835/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-05-20 15:30:20.000000000 Z
+  vulnerabilities:
+  - name: lxml's HTML Cleaner allows crafted and SVG embedded scripts to pass through
+    cve_id: CVE-2021-43818
+    cve_url: https://github.com/advisories/GHSA-55x5-fj6c-h6m8
+    detected_date: Dec 14
+    severity: high
+    first_patched: 4.6.5
+  - name: lxml vulnerable to Cross-site Scripting
+    cve_id: CVE-2020-27783
+    cve_url: https://github.com/advisories/GHSA-pgww-xf46-h92r
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 4.6.2
+  - name: lxml NULL Pointer Dereference allows attackers to cause a denial of service
+    cve_id: CVE-2022-2309
+    cve_url: https://github.com/advisories/GHSA-wrxv-2j5q-m38w
+    detected_date: Jul 7
+    severity: moderate
+    first_patched: 4.9.1
+  - name: 'lxml vulnerable to Cross-Site Scripting '
+    cve_id: CVE-2021-28957
+    cve_url: https://github.com/advisories/GHSA-jq4v-f5q6-mjqq
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 4.6.3
+- name: python-dateutil
+  description: Extensions to the standard Python datetime module
+  package_url: https://pypi.org/project/python-dateutil
+  version: 2.8.1
+  license: NRL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-02-27 17:53:20.000000000 Z
+- name: requests
+  description: Python HTTP for Humans
+  package_url: https://pypi.org/project/requests
+  version: 2.22.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19826/default_d7c684bf2673f008a9f02ac93901229297a22d7e.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-03-24 23:24:38.000000000 Z
+  vulnerabilities:
+  - name: Unintended leak of Proxy-Authorization header in requests
+    cve_id: CVE-2023-32681
+    cve_url: https://github.com/advisories/GHSA-j8r2-6x86-q33q
+    detected_date: May 23
+    severity: moderate
+    first_patched: 2.31.0
+- name: selenium
+  description: Python bindings for Selenium
+  package_url: https://pypi.org/project/selenium
+  version: 3.141.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19869/default_d05f6f09935776629f62e8aed365805502c14921.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-02-27 18:18:24.000000000 Z
+- name: tabulate
+  description: Pretty-print tabular data
+  package_url: https://pypi.org/project/tabulate
+  version: 0.8.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19864/default_7975a21f3bf03129dc3bc4168cf7cb7ee2cc14cc.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-04-17 21:12:38.000000000 Z
+- name: termcolor
+  description: ANSII Color formatting for output in terminal
+  package_url: https://pypi.org/project/termcolor
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20014/default_9e735547ab71630330a9e635a78e5cedca9ba560.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2020-10-03 21:24:12.000000000 Z
+- name: urllib3
+  description: HTTP library with thread-safe connection pooling
+  package_url: https://pypi.org/project/urllib3
+  version: 1.25.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19842/default_4604ff5dcb7f4d9c7b3833591c2142493951b19c.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-03-24 20:05:42.000000000 Z
+  vulnerabilities:
+  - name: Catastrophic backtracking in URL authority parser when passed URL containing
+      many @ characters
+    cve_id: CVE-2021-33503
+    cve_url: https://github.com/advisories/GHSA-q2q7-5pp4-w6pg
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.26.5
+  - name: urllib3's request body not stripped after redirect from 303 status changes
+      request method to GET
+    cve_id: CVE-2023-45803
+    cve_url: https://github.com/advisories/GHSA-g4mx-q9vg-27p4
+    detected_date: Oct 18
+    severity: moderate
+    first_patched: 1.26.18
+  - name: "`Cookie` HTTP header isn't stripped on cross-origin redirects"
+    cve_id: CVE-2023-43804
+    cve_url: https://github.com/advisories/GHSA-v845-jxx5-vc9f
+    detected_date: Oct 3
+    severity: moderate
+    first_patched: 1.26.17
+- name: websockets
+  description: An implementation of the WebSocket Protocol
+  package_url: https://pypi.org/project/websockets
+  version: '8.1'
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19951/default_fbe690a687f1af7dc36ac3d526708be3294c4cc9.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-02-27 18:21:44.000000000 Z
+  vulnerabilities:
+  - name: Observable Timing Discrepancy in aaugustin websockets library
+    cve_id: CVE-2021-33880
+    cve_url: https://github.com/advisories/GHSA-8ch4-58qp-g3mp
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: '9.1'
+- name: wheel
+  description: A built-package format for Python
+  package_url: https://pypi.org/project/wheel
+  version: 0.36.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19889/default_7182952cb92ae36151a754e2592ac68e6e6340df.png
+  detection_source_url: https://github.com/2lambda123/Sports-betting/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: pretrehr
+  last_updated_on: 2021-03-01 22:48:21.000000000 Z
+  vulnerabilities:
+  - name: pypa/wheel vulnerable to Regular Expression denial of service (ReDoS)
+    cve_id: CVE-2022-40898
+    cve_url: https://github.com/advisories/GHSA-qwmp-2cf2-g9g6
+    detected_date: Dec 27
+    severity: high
+    first_patched: 0.38.1
